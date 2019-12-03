@@ -1,0 +1,14 @@
+{
+  "name": "cypress_mint",
+  "version": "1.0.0",
+  "description": "automation test for mint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yazan Khaled",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.6.1"
+  }
+}
