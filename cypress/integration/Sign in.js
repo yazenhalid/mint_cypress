@@ -11,6 +11,7 @@ describe('test Sign in', () => {
             cy.get('#UserName').type(testData.username1);
             cy.get('#Password').type(testData.password1);
             cy.get('[type="submit"]').click();
+            cy.get('.dropdown-item > span').click({ force: true });
         })
         
               
