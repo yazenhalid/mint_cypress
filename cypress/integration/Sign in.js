@@ -13,9 +13,7 @@ describe('test Sign in', () => {
             cy.get('[type="submit"]').click();
             cy.get('.dropdown-item > span').click({ force: true });
         })
-        
-              
+                     
     })
-
 
 })

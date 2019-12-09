@@ -15,6 +15,7 @@ describe('test Sign up', () => {
         cy.get('[style="display: none;"] li').eq(3).click({ force: true });
         cy.get('[role="button"]').click({ force: true });
         cy.get('.ui-autocomplete li').eq(3).click({ force: true });
+      
     })
 
 
