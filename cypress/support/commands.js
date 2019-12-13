@@ -37,4 +37,12 @@ Cypress.Commands.add('Sign_out', () => {
         cy.get('.dropdown-item > span').click({ force: true });
         
         })
-
+        Cypress.Commands.add('Sign_in_my', () => {
+                cy.fixture('signin').as('data');
+                cy.get('@data').then((testData) => {
+                        cy.get('#UserName').type(testData.username2);
+                        cy.get('#Password').type(testData.password2);
+                        cy.get('[type="submit"]').click();
+                        
+                })
+        })
