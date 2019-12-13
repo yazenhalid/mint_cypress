@@ -23,9 +23,18 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-Cypress.Commands.add('login', () => {
 
-        cy.get('#UserName').type('test77');
-        cy.get('#Password').type('12345678');
-        cy.get('[type="submit"]').click();
+Cypress.Commands.add('Sign_in', () => {
+        cy.fixture('signin').as('data');
+        cy.get('@data').then((testData) => {
+                cy.get('#UserName').type(testData.username1);
+                cy.get('#Password').type(testData.password1);
+                cy.get('[type="submit"]').click();
+                
+        })
 })
+Cypress.Commands.add('Sign_out', () => {
+        cy.get('.dropdown-item > span').click({ force: true });
+        
+        })
+
