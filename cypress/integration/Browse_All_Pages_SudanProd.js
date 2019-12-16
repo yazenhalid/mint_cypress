@@ -13,9 +13,9 @@ describe('test_All_Pages', () => {
     //cy.get('#menu-marketplace').click()     //Marketplace_Page
     //cy.get('.col-lg-4 > h2').should('be.visible')
     //cy.get('.col-lg-4 > h2').should('be.eq','المتجر الإلكتروني')
-    //  cy.get('#open-button').click()      //side-menu
-    // cy.get('nav > [href="/User/Profile/15863"]').click()  //Profile_Page
-    //  cy.url().should('include', 'Profile')
+    cy.get('#open-button').click()      //side-menu
+    cy.get('nav > [href="/User/Profile/529"]').click()  //Profile_Page
+    cy.url().should('include', 'Profile')
     cy.get('#open-button').click()                //side-menu
     cy.get('[href="/User/Settings"]').click()     //Settings_Page
     cy.url().should('include', 'Settings')
@@ -41,9 +41,9 @@ describe('test_All_Pages', () => {
     //cy.get('#menu-marketplace').click()//Marketplace_Page
     //cy.get('.col-lg-4 > h2').should('be.visible')
     //cy.get('.col-lg-4 > h2').should('be.eq','المتجر الإلكتروني')
-    //  cy.get('#open-button').click()//side-menu
-    // cy.get('nav > [href="/User/Profile/15863"]').click()//Profile_Page
-    //  cy.url().should('include', 'Profile')
+    cy.get('#open-button').click()//side-menu
+    cy.get('nav > [href="/User/Profile/529"]').click()//Profile_Page
+    cy.url().should('include', 'Profile')
     cy.get('#open-button').click()//side-menu
     cy.get('[href="/User/Settings"]').click()//Settings_Page
     cy.url().should('include', 'Settings')

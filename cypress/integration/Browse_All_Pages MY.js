@@ -1,7 +1,6 @@
 /// <reference types="Cypress" />
-
+//
 describe('test_All_Pages', () => {
-
   it('open_All_Pages', () => {
     cy.viewport('macbook-15')
     cy.visit('https://my.mintplatform.net');
@@ -28,10 +27,7 @@ describe('test_All_Pages', () => {
     // cy.get('#userDropDown_1').click({ force: true })
     // cy.url().should('include', 'Profile')
     cy.get('.dropdown-item > span').click({ force: true })//Sign_out
-
-
   })
-
   it('open_All_Pages_iphone-x', () => {
     cy.viewport('iphone-x')
     cy.visit('https://my.mintplatform.net');
@@ -58,7 +54,6 @@ describe('test_All_Pages', () => {
     // cy.get('#userDropDown_1').click({ force: true })
     // cy.url().should('include', 'Profile')
     cy.get('.dropdown-item > span').click({ force: true })//Sign_out
-
   })
-
 })
+
