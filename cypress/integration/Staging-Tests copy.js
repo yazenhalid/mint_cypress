@@ -14,7 +14,7 @@
     
     describe('test_All_Pages', () => {
         
-        beforeEach(() => {
+        before(() => {
             cy.viewport('macbook-15')
             cy.visit('https://webcore.mintplatform.net')
             cy.Sign_in()
@@ -40,7 +40,7 @@
             cy.url().should('include', 'webcore.mintplatform.net')
             cy.get('#menu-marketplace').should('be.visible').click({force: true})//Marketplace_Page
             
-            //cy.get('#menu-marketplace').should('be.visible').click({force: true})
+            cy.get('#menu-marketplace').should('be.visible').click({force: true})
            // cy.get('.col-lg-4 > h2').should('be.visible')
             //cy.get('.col-lg-4 > h2').should('be.eq','المتجر الإلكتروني')
 
