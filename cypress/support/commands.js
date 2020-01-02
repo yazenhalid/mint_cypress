@@ -52,11 +52,11 @@ Cypress.Commands.add('Sign_in_my', () => {
 })
 
 //Sign_in_SudanProd
-Cypress.Commands.add('Sign_in_SudanProd', () => {
+Cypress.Commands.add('Sign_in_Sudan_test', () => {
         cy.fixture('signin').as('data');
         cy.get('@data').then((testData) => {
-                cy.get('#UserName').type(testData.SudanProd_usernameB2C);
-                cy.get('#Password').type(testData.SudanProd_passwordB2C);
+                cy.get('#UserName').type(testData.Sudantest_username);
+                cy.get('#Password').type(testData.Sudantest_password);
                 cy.get('[type="submit"]').click();
 
         })
