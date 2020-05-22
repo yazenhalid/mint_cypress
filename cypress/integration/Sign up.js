@@ -13,6 +13,7 @@
 //             cy.log(text);
 //         })
 //     })
+/////
 
 describe('test Sign up', () => {
     it('moatk email', () => {
